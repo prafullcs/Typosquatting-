@@ -1,0 +1,209 @@
+<!-- 
+This is the DOCTYPE declaration, specifying the document type and version.
+-->
+<!DOCTYPE html>
+
+<!-- The root element of the HTML document -->
+<html lang="en">
+
+<!-- The head section contains meta-information about the document -->
+<head>
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title of the webpage, shown in the browser tab -->
+    <title>TypoSquatting</title>
+    
+    <!-- Internal CSS to style the HTML elements -->
+    <style>
+        /* Basic styling for the body element, including margin reset, font, and background color */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: right; /* Aligns the navigation links to the right */
+        }
+
+        /* Styling for the navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Hover effect for navigation links */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for centering the content vertically and horizontally */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px); /* Full height minus the height of the nav bar */
+            text-align: center;
+        }
+
+        /* Styling for the content box */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+        }
+
+        /* Styling for headings within the content box */
+        .content h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the text input field */
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+             /* Ensures padding is included in the element's total width and height */
+        }
+
+        /* Container for the buttons */
+        .button-group {
+            margin-top: 20px;
+        }
+
+        /* Styling for the buttons */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff; /* Primary button color */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        /* Hover effect for the primary button */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for the clear button */
+        .clear-button {
+            background-color: #dc3545; /* Red color for the clear button */
+        }
+
+        /* Hover effect for the clear button */
+        .clear-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<!-- The body contains the content that will be displayed in the browser -->
+<body>
+    <!-- Navigation bar with links to different sections of the page -->
+    <nav>
+        <!-- Navigation link to the Home section -->
+        <a href="#home" onclick="showSection('home')">Home</a>
+        
+        <!-- Navigation link to the About section -->
+        <a href="#about" onclick="showSection('about')">About</a>
+        
+        <!-- Navigation link to the Contact section -->
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <!-- Main container for centering the content on the page -->
+    <div class="container">
+        <!-- Home section with a text input field and buttons -->
+
+    
+    <!-- Form that submits the text input to the server -->
+    <!-- Home section with a form to submit text input -->
+<div id="home" class="content">
+    <h1>Enter Your Text</h1>
+
+    <!-- Form to submit data to the local server -->
+    <form action="http://localhost:5000/data" method="post">
+        <!-- Text input field for user to enter text -->
+        <input type="text" name="textInput" placeholder="Type something here..." required>
+        
+        <!-- Container for the buttons -->
+        <div class="button-group">
+            <!-- Submit button that triggers form submission -->
+            <button type="submit">Submit</button>
+            
+            <!-- Clear button that clears the text input field -->
+            <button type="reset" class="clear-button">Clear</button>
+        </div>
+    </form>
+</div>
+
+</div>
+
+<!-- JavaScript function to clear the text input -->
+<script>
+    function clearTextInput() {
+        document.getElementById('input_value').value = '';
+    }
+</script>
+
+        
+        <!-- About section with some informational text, initially hidden -->
+        <div id="about" class="content" style="display:none;">
+            <h1>About</h1>
+            <p>This is a simple page to dedicated to  typosquatting of domain name system  . It's a demonstration of basic Detection of Typosquatting  Domain Names using  Deep Learning. .</p>
+            
+        </div>
+        
+        <!-- Contact section with contact information, initially hidden -->
+        <div id="contact" class="content" style="display:none;">
+            <h1>Contact</h1>
+            <p>For inquiries, please email us at prafullchandrasingh013@gmail.com.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript section for adding interactivity -->
+    <script>
+        /* Function to show a specific section and hide others */
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none'; /* Hide all sections */
+            }
+            document.getElementById(sectionId).style.display = 'block'; /* Display the selected section */
+        }
+
+        /* Function to handle the submit button click */
+        function handleTextInput() {
+            var input_text = document.getElementById('input_value').value;
+            if (input_text) {
+                alert(`You entered: ${input_text}`); /* Display the entered text in an alert */
+                // Additional logic to handle the input text can be added here
+            } else {
+                alert('Please enter some text.'); /* Alert if no text was entered */
+            }
+        }
+
+        /* Function to clear the text input field */
+        function clearTextInput() {
+            document.getElementById('input_value').value = ''; /* Clear the input field */
+        }
+    </script>
+</body>
+</html>
