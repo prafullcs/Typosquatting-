@@ -1,8 +1,6 @@
 DETECTION OF TYPOSQUATTING DOMAIN NAMES 
 
 
-![image](https://github.com/user-attachments/assets/fd4c342b-1956-4b35-8c82-cd30ae8e14b2)
-
 ![Screenshot (30)](https://github.com/user-attachments/assets/852dd97f-8a33-4e27-88a7-58067d02bcaa)
 
 ![Screenshot (31)](https://github.com/user-attachments/assets/a6e58516-2768-47a0-891d-a735a99831fd)
