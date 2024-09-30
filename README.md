@@ -1,4 +1,5 @@
-DETECTION OF TYPOSQUATTING DOMAIN NAMES USING DEEP LEARNING
+DETECTION OF TYPOSQUATTING DOMAIN NAMES 
+
 
 ![image](https://github.com/user-attachments/assets/fd4c342b-1956-4b35-8c82-cd30ae8e14b2)
 
@@ -10,4 +11,4 @@ DETECTION OF TYPOSQUATTING DOMAIN NAMES USING DEEP LEARNING
 
 ![Screenshot (33)](https://github.com/user-attachments/assets/67834885-748c-4ea7-bcad-81738aff3f59)
 
-![image](https://github.com/user-attachments/assets/2d5eb6d5-8fa8-43a1-a462-425be2ee1d6a)
+![Screenshot (34)](https://github.com/user-attachments/assets/3af5dae1-2bc5-46a0-a8e5-53fb533f051e)
